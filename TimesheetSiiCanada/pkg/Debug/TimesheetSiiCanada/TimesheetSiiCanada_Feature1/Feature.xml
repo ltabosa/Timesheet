@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="Fonctionnalité de complément SharePoint" Id="e4fc8240-2904-4810-b8f3-ce61593ff7bb" Scope="Web" Title="TimesheetSiiCanada Feature1" Version="1.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Pages\Default.aspx" />
+    <ElementFile Location="Pages\NewTimesheet.aspx" />
+    <ElementManifest Location="Scripts\Elements.xml" />
+    <ElementFile Location="Scripts\App.js" />
+    <ElementFile Location="Scripts\jquery-1.9.1.min.map" />
+    <ElementFile Location="Scripts\jquery-1.9.1.min.js" />
+    <ElementFile Location="Scripts\jquery-1.9.1.js" />
+    <ElementFile Location="Scripts\jquery-1.9.1.intellisense.js" />
+    <ElementFile Location="Scripts\bootstrap.min.js" />
+    <ElementFile Location="Scripts\jquery-ui.min.js" />
+    <ElementManifest Location="Content\Elements.xml" />
+    <ElementFile Location="Content\App.css" />
+    <ElementFile Location="Content\bootstrap.min.css" />
+    <ElementFile Location="Content\jquery-ui.css" />
+    <ElementManifest Location="Images\Elements.xml" />
+    <ElementFile Location="Images\AppIcon.png" />
+    <ElementFile Location="Images\CopyIcon.png" />
+    <ElementFile Location="Images\CreateIcon.png" />
+    <ElementFile Location="Images\EditIcon.png" />
+    <ElementFile Location="Images\ViewIcon.png" />
+    <ElementManifest Location="MyTimesheetInstance\Elements.xml" />
+    <ElementManifest Location="MyTimesheet\Elements.xml" />
+    <ElementFile Location="MyTimesheet\Schema.xml" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="Pages\Elements.xml" />
+        <ElementManifest Location="Scripts\Elements.xml" />
+        <ElementManifest Location="Content\Elements.xml" />
+        <ElementManifest Location="Images\Elements.xml" />
+        <ElementManifest Location="MyTimesheetInstance\Elements.xml" />
+        <ElementManifest Location="MyTimesheet\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

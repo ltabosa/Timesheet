@@ -1,0 +1,12 @@
+﻿/* Placer les styles personnalisés ci-dessous */
+.ui-datepicker-calendar { 
+    display: none; 
+}
+#myclass{
+    overflow:auto;
+    width: 1500px;
+}
+
+#myclass th{
+    
+}

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="01c110d0-31fb-4003-ba89-055e9f41328c" solutionId="01c110d0-31fb-4003-ba89-055e9f41328c" resetWebServer="false" sharePointProductVersion="16.0" name="TimesheetSiiCanada" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="e4fc8240-2904-4810-b8f3-ce61593ff7bb" />
+    <featureReference itemId="8fce8df4-39fd-4c4b-baf6-3e61a71596c3" />
+    <featureReference itemId="bdf94a5d-394d-46a4-b082-39d4945d38a6" />
+  </features>
+</package>

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="AdminView" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/AdminView" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x0100e8f4a22e7c334447a2e24029954ce867" Name="ListFieldsContentType">
+        <FieldRefs>
+
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{1ce8800e-49fc-4a1b-bf3f-79860e4a435f}" Name="Project" />
+          <FieldRef ID="{bc715d09-05b5-45af-91ce-c3a043914553}" Name="Month" />
+          <FieldRef ID="{16017911-c379-40d4-baea-320ab646b7a3}" Name="Year" />
+          <FieldRef ID="{4f5f7622-c846-4aad-9854-81755a562991}" Name="Total" />
+          <FieldRef ID="{53101f38-dd2e-458c-b245-0c236cc13d1a}" Name="AssignedTo" />
+          <FieldRef ID="{83b99890-c816-4175-918f-ea96272cabbe}" Name="Status" />
+          <FieldRef ID="{22f93c62-b240-462c-949c-3179cb801c9f}" Name="Test" />
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field Name="Project" ID="{1ce8800e-49fc-4a1b-bf3f-79860e4a435f}" DisplayName="Project" Type="Lookup" List="{E24CAD2C-B987-4585-BC84-5AD36548A308}" WebId="{ecebad80-8e5a-40b3-8135-afcabf4ecd24}" ShowField="ActiveTitle" >
+        
+       </Field>
+      <Field Name="Month" ID="{bc715d09-05b5-45af-91ce-c3a043914553}" DisplayName="Month" Type="Text" />
+      <Field Name="Year" ID="{16017911-c379-40d4-baea-320ab646b7a3}" DisplayName="Year" Type="Text" />
+      <Field Name="Total" ID="{4f5f7622-c846-4aad-9854-81755a562991}" DisplayName="Total Hour" Type="Number" />
+      <Field ID="{53101f38-dd2e-458c-b245-0c236cc13d1a}" Name="AssignedTo" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="AssignedTo" Group="$Resources:core,Issue_Task_Columns;" Type="User" List="UserInfo" DisplayName="$Resources:core,Assigned_To;" DelayActivateTemplateBinding="GROUP,SPSPERS" >
+        
+      </Field>
+      <Field Name="Status" ID="{83b99890-c816-4175-918f-ea96272cabbe}" DisplayName="Status" Type="MultiChoice" />
+      <Field Name="Test" ID="{22f93c62-b240-462c-949c-3179cb801c9f}" DisplayName="Project:Email" Type="Lookup" FieldRef="{1ce8800e-49fc-4a1b-bf3f-79860e4a435f}" List="{E24CAD2C-B987-4585-BC84-5AD36548A308}" WebId="{ecebad80-8e5a-40b3-8135-afcabf4ecd24}" ShowField="EMail" />
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+
+
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+
+
+
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="Project" />
+          <FieldRef Name="Month" />
+          <FieldRef Name="Year" />
+          <FieldRef Name="Total" />
+          <FieldRef Name="AssignedTo" />
+          <FieldRef Name="Status" />
+          <FieldRef Name="Test" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+
+
+
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="01c110d0-31fb-4003-ba89-055e9f41328c" SharePointProductVersion="16.0">
+  <FeatureManifests>
+    <FeatureManifest Location="TimesheetSiiCanada_Feature1\Feature.xml" />
+    <FeatureManifest Location="TimesheetSiiCanada_Feature2\Feature.xml" />
+    <FeatureManifest Location="TimesheetSiiCanada_Feature3\Feature.xml" />
+  </FeatureManifests>
+</Solution>

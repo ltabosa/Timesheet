@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="f9ee389a-cffe-40a5-9377-2c7dd6a3cbc1" Scope="Web" Title="TimesheetSiiCanada Feature2" Version="1.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="AdminView\Elements.xml" />
+    <ElementFile Location="AdminView\Schema.xml" />
+    <ElementManifest Location="AdminViewInstance\Elements.xml" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="AdminView\Elements.xml" />
+        <ElementManifest Location="AdminViewInstance\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

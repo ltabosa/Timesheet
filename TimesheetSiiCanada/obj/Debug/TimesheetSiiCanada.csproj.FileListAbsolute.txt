@@ -1,0 +1,3 @@
+c:\users\leonardotabosa\documents\visual studio 2015\Projects\TimesheetSiiCanada\TimesheetSiiCanada\bin\Debug\TimesheetSiiCanada.pdb
+c:\users\leonardotabosa\documents\visual studio 2015\Projects\TimesheetSiiCanada\TimesheetSiiCanada\obj\Debug\TimesheetSiiCanada.dll
+c:\users\leonardotabosa\documents\visual studio 2015\Projects\TimesheetSiiCanada\TimesheetSiiCanada\obj\Debug\TimesheetSiiCanada.pdb

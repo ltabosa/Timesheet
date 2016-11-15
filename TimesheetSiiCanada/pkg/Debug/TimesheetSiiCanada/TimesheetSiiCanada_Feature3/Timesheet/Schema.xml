@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Timesheet" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Timesheet" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+
+
+      <ContentType ID="0x0100ff34e3c96b3649a7be03c12031de1016" Name="ListFieldsContentType">
+        <FieldRefs>
+          
+          <FieldRef ID="{0b3c4734-812c-4d27-82fe-050a4f5c0aae}" Name="Projet" />
+          <FieldRef ID="{c282bb11-336f-462e-8100-75206f16bf1b}" Name="Month" />
+          <FieldRef ID="{505f8f87-48e7-4247-82bc-0d0ea47b7056}" Name="Year" />
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{53101f38-dd2e-458c-b245-0c236cc13d1a}" Name="AssignedTo" />
+          <FieldRef ID="{c07a5590-b5d2-41fd-8222-6cd792ff2f82}" Name="_x0031_" />
+          <FieldRef ID="{ec8e8aec-9f0f-4415-8667-094345d4e5b7}" Name="_x0032_" />
+          <FieldRef ID="{2d6632e6-ead0-49e0-8991-9ff75b2421f6}" Name="_x0033_" />
+          <FieldRef ID="{050ce1c0-eeea-4cea-bed9-c308b2ef6172}" Name="_x0034_" />
+          <FieldRef ID="{9e8232f4-fb87-4495-a724-b0ca865c9c3b}" Name="_x0035_" />
+          <FieldRef ID="{92f38e39-5c64-421b-abe8-77e1d14b4858}" Name="_x0036_" />
+          <FieldRef ID="{d3dfa37f-d7a5-40b5-b8c2-fc9d11377370}" Name="_x0037_" />
+          <FieldRef ID="{3a9316b1-f3f5-4e7e-994a-91e31c110b0d}" Name="_x0038_" />
+          <FieldRef ID="{a30ead6c-07dc-4791-ba11-a3472b5dc74d}" Name="_x0039_" />
+          <FieldRef ID="{8ead1aae-8a73-4bd3-9a74-fe8451a6daf1}" Name="_x0031_0" />
+          <FieldRef ID="{4a00c0c1-59de-46e0-a3cd-596d756a7df6}" Name="_x0031_1" />
+          <FieldRef ID="{d0328c83-30cd-4a54-844d-24f3faf7c71e}" Name="_x0031_2" />
+          <FieldRef ID="{b9fb4bc8-2632-498e-99f9-7a1f34838dc8}" Name="_x0031_3" />
+          <FieldRef ID="{7670143c-2369-43e4-95c8-cc8d4214af81}" Name="_x0031_4" />
+          <FieldRef ID="{78e9fd7d-179c-4495-a8f5-930d95c99219}" Name="_x0031_5" />
+          <FieldRef ID="{2d41eaaf-e6b3-4fc0-ae8a-b0d22c5d3b19}" Name="_x0031_6" />
+          <FieldRef ID="{1fc1cd42-9a2c-4f71-9f62-5ac341aedd91}" Name="_x0031_7" />
+          <FieldRef ID="{67b2c809-bdc9-46f1-9e40-6f37f43801f5}" Name="_x0031_8" />
+          <FieldRef ID="{e7f29331-64a8-4058-9d51-f7061f0e1f0e}" Name="_x0031_9" />
+          <FieldRef ID="{b9a8e038-02bb-4dbc-81a0-d41801c0e921}" Name="_x0032_0" />
+          <FieldRef ID="{d0fa9666-3f4c-4705-b7ae-a718dd17fefa}" Name="_x0032_1" />
+          <FieldRef ID="{881d6d2e-b2e0-4fc6-814f-2395cb0af8ed}" Name="_x0032_2" />
+          <FieldRef ID="{69916ecb-92e8-470f-942a-ce86328f31ea}" Name="_x0032_3" />
+          <FieldRef ID="{72a48c51-e1c3-4bd5-b97e-8723f5efc9d3}" Name="_x0032_4" />
+          <FieldRef ID="{b145b194-f405-4e9b-a9f5-54389a9a0c43}" Name="_x0032_5" />
+          <FieldRef ID="{76a40bf7-a5f0-4ae2-98a9-df6e0ae4e3e1}" Name="_x0032_6" />
+          <FieldRef ID="{798478cc-332c-4695-9f7f-b9d1c1c4eb56}" Name="_x0032_7" />
+          <FieldRef ID="{d9003785-40ec-40c8-966d-4dabc6fec073}" Name="_x0032_8" />
+          <FieldRef ID="{ce03a0dd-6bed-478a-ad05-27e42fc06b7d}" Name="_x0032_9" />
+          <FieldRef ID="{a98f2d59-4c3a-4cf2-a716-918d01fe3cde}" Name="_x0033_0" />
+          <FieldRef ID="{121f7226-f0f1-4f4a-9b9f-4c6288dff695}" Name="_x0033_1" />
+          <FieldRef ID="{72d3ea8a-7329-47d6-a73e-6954d981c361}" Name="TotalHours" />
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+
+      
+      <Field Name="Projet" ID="{0b3c4734-812c-4d27-82fe-050a4f5c0aae}" DisplayName="Projet" Type="Lookup" />
+      <Field Name="Month" ID="{c282bb11-336f-462e-8100-75206f16bf1b}" DisplayName="Month" Type="Text" />
+      <Field Name="Year" ID="{505f8f87-48e7-4247-82bc-0d0ea47b7056}" DisplayName="Year" Type="Text" />
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="Comments" Required="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field ID="{53101f38-dd2e-458c-b245-0c236cc13d1a}" Name="AssignedTo" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="AssignedTo" Group="$Resources:core,Issue_Task_Columns;" Type="User" List="UserInfo" DisplayName="$Resources:core,Assigned_To;" DelayActivateTemplateBinding="GROUP,SPSPERS" />
+      <Field Name="_x0031_" ID="{c07a5590-b5d2-41fd-8222-6cd792ff2f82}" DisplayName="1" Type="Number" />
+      <Field Name="_x0032_" ID="{ec8e8aec-9f0f-4415-8667-094345d4e5b7}" DisplayName="2" Type="Number" />
+      <Field Name="_x0033_" ID="{2d6632e6-ead0-49e0-8991-9ff75b2421f6}" DisplayName="3" Type="Number" />
+      <Field Name="_x0034_" ID="{050ce1c0-eeea-4cea-bed9-c308b2ef6172}" DisplayName="4" Type="Number" />
+      <Field Name="_x0035_" ID="{9e8232f4-fb87-4495-a724-b0ca865c9c3b}" DisplayName="5" Type="Number" />
+      <Field Name="_x0036_" ID="{92f38e39-5c64-421b-abe8-77e1d14b4858}" DisplayName="6" Type="Number" />
+      <Field Name="_x0037_" ID="{d3dfa37f-d7a5-40b5-b8c2-fc9d11377370}" DisplayName="7" Type="Number" />
+      <Field Name="_x0038_" ID="{3a9316b1-f3f5-4e7e-994a-91e31c110b0d}" DisplayName="8" Type="Number" />
+      <Field Name="_x0039_" ID="{a30ead6c-07dc-4791-ba11-a3472b5dc74d}" DisplayName="9" Type="Number" />
+      <Field Name="_x0031_0" ID="{8ead1aae-8a73-4bd3-9a74-fe8451a6daf1}" DisplayName="10" Type="Number" />
+      <Field Name="_x0031_1" ID="{4a00c0c1-59de-46e0-a3cd-596d756a7df6}" DisplayName="11" Type="Number" />
+      <Field Name="_x0031_2" ID="{d0328c83-30cd-4a54-844d-24f3faf7c71e}" DisplayName="12" Type="Number" />
+      <Field Name="_x0031_3" ID="{b9fb4bc8-2632-498e-99f9-7a1f34838dc8}" DisplayName="13" Type="Number" />
+      <Field Name="_x0031_4" ID="{7670143c-2369-43e4-95c8-cc8d4214af81}" DisplayName="14" Type="Number" />
+      <Field Name="_x0031_5" ID="{78e9fd7d-179c-4495-a8f5-930d95c99219}" DisplayName="15" Type="Number" />
+      <Field Name="_x0031_6" ID="{2d41eaaf-e6b3-4fc0-ae8a-b0d22c5d3b19}" DisplayName="16" Type="Number" />
+      <Field Name="_x0031_7" ID="{1fc1cd42-9a2c-4f71-9f62-5ac341aedd91}" DisplayName="17" Type="Number" />
+      <Field Name="_x0031_8" ID="{67b2c809-bdc9-46f1-9e40-6f37f43801f5}" DisplayName="18" Type="Number" />
+      <Field Name="_x0031_9" ID="{e7f29331-64a8-4058-9d51-f7061f0e1f0e}" DisplayName="19" Type="Number" />
+      <Field Name="_x0032_0" ID="{b9a8e038-02bb-4dbc-81a0-d41801c0e921}" DisplayName="20" Type="Number" />
+      <Field Name="_x0032_1" ID="{d0fa9666-3f4c-4705-b7ae-a718dd17fefa}" DisplayName="21" Type="Number" />
+      <Field Name="_x0032_2" ID="{881d6d2e-b2e0-4fc6-814f-2395cb0af8ed}" DisplayName="22" Type="Number" />
+      <Field Name="_x0032_3" ID="{69916ecb-92e8-470f-942a-ce86328f31ea}" DisplayName="23" Type="Number" />
+      <Field Name="_x0032_4" ID="{72a48c51-e1c3-4bd5-b97e-8723f5efc9d3}" DisplayName="24" Type="Number" />
+      <Field Name="_x0032_5" ID="{b145b194-f405-4e9b-a9f5-54389a9a0c43}" DisplayName="25" Type="Number" />
+      <Field Name="_x0032_6" ID="{76a40bf7-a5f0-4ae2-98a9-df6e0ae4e3e1}" DisplayName="26" Type="Number" />
+      <Field Name="_x0032_7" ID="{798478cc-332c-4695-9f7f-b9d1c1c4eb56}" DisplayName="27" Type="Number" />
+      <Field Name="_x0032_8" ID="{d9003785-40ec-40c8-966d-4dabc6fec073}" DisplayName="28" Type="Number" />
+      <Field Name="_x0032_9" ID="{ce03a0dd-6bed-478a-ad05-27e42fc06b7d}" DisplayName="29" Type="Number" />
+      <Field Name="_x0033_0" ID="{a98f2d59-4c3a-4cf2-a716-918d01fe3cde}" DisplayName="30" Type="Number" />
+      <Field Name="_x0033_1" ID="{121f7226-f0f1-4f4a-9b9f-4c6288dff695}" DisplayName="31" Type="Number" />
+      <Field Name="TotalHours" ID="{72d3ea8a-7329-47d6-a73e-6954d981c361}" DisplayName="TotalHours" Type="Number" />
+    </Fields>
+    <Views>
+
+
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+          <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="Projet" />
+          <FieldRef Name="Month" />
+          <FieldRef Name="Year" />
+          <FieldRef Name="AssignedTo" />
+          <FieldRef Name="_x0031_" />
+          <FieldRef Name="_x0032_" />
+          <FieldRef Name="_x0033_" />
+          <FieldRef Name="_x0034_" />
+          <FieldRef Name="_x0035_" />
+          <FieldRef Name="_x0036_" />
+          <FieldRef Name="_x0037_" />
+          <FieldRef Name="_x0038_" />
+          <FieldRef Name="_x0039_" />
+          <FieldRef Name="_x0031_0" />
+          <FieldRef Name="_x0031_1" />
+          <FieldRef Name="_x0031_2" />
+          <FieldRef Name="_x0031_3" />
+          <FieldRef Name="_x0031_4" />
+          <FieldRef Name="_x0031_5" />
+          <FieldRef Name="_x0031_6" />
+          <FieldRef Name="_x0031_7" />
+          <FieldRef Name="_x0031_8" />
+          <FieldRef Name="_x0031_9" />
+          <FieldRef Name="_x0032_0" />
+          <FieldRef Name="_x0032_1" />
+          <FieldRef Name="_x0032_2" />
+          <FieldRef Name="_x0032_3" />
+          <FieldRef Name="_x0032_4" />
+          <FieldRef Name="_x0032_5" />
+          <FieldRef Name="_x0032_6" />
+          <FieldRef Name="_x0032_7" />
+          <FieldRef Name="_x0032_8" />
+          <FieldRef Name="_x0032_9" />
+          <FieldRef Name="_x0033_0" />
+          <FieldRef Name="_x0033_1" />
+          <FieldRef Name="TotalHours" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>
